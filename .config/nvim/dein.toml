@@ -1,0 +1,12 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+    colorscheme iceberg
+    syntax on
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
