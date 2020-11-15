@@ -10,3 +10,19 @@ hook_add = '''
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+
+[[plugins]]
+repo = 'kovisoft/paredit.vim'
+hook_add = '''
+let g:paredit_mode=1
+'''
+
+[[plugins]]
+repo = 'junegunn/rainbow_parentheses.vim'
+hook_add = '''
+    augroup rainbow_lisp
+        autocmd!
+        autocmd FileType lisp,clojure,scheme RainbowParentheses
+    augroup END
+'''
